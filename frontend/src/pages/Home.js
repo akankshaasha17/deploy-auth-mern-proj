@@ -8,7 +8,7 @@ export default function Home() {
 useEffect(() => {
   const token = localStorage.getItem("token");
 
-  fetch("http://localhost:8080/products", {
+  fetch("https://deploy-auth-mern-proj-api.vercel.app/products", {
     headers: {
       Authorization: "Bearer " + token
     }
