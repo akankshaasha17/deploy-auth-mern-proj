@@ -21,7 +21,7 @@ export default function Signup() {
     }
 
     try {
-      const res = await fetch("http://localhost:8080/auth/signup", {
+      const res = await fetch("https://deploy-auth-mern-proj-api.vercel.app/auth/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
